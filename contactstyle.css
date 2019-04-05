@@ -1,0 +1,16 @@
+.contact{
+	line-height: 200%;
+	color: white;
+	font-weight: 100;
+	font-family: "Century Gothic", sans-serif;
+	width: 450px;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	top: 200px;
+	right: 0;
+	left: 0;
+	border-radius: 3px;
+}
