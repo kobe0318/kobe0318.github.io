@@ -25,11 +25,7 @@
 <div class="contact" >
 		<h1>Contact Me</h1>
 		<p>E-mail Me</p>
-		<form class="contact-form" action="contactform.php" method="post">
-			<input type="text" name="name" placeholder="Full name">
-			<input type="email" name="email" placeholder="Your E-mail">
-			<input type="text" name="subject" placeholder="Subject">
-			<textarea name="message" placeholder="Message"></textarea>
-			<button type="submit" name="submit">Send E-Mail</button>
+		E-mail: kobe.rachels@gmail.com or karachel@uncg.edu
+		Phone number: (336) 648-1846
 	</body>
 </html>
