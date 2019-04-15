@@ -1,31 +1,24 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<meta name="viewport" content="width=device-width, initial-scale=1" />
-			<meta charset="utf-8">
-			<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-			<link rel="stylesheet" href="contactstyle.css">
-			<link rel="stylesheet" href="style.css">
-			<title>Contact Me</title>
-		</head>
-	<body>
-		<header>
-			<div class="container">
-				<nav>
-					<h1 class="brand"><a href="index.html">Kobe <span>Rachels</span></a></h1>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-<div class="contact" >
-		<h1>Contact Me</h1>
-		<p>E-mail Me</p>
-		E-mail: kobe.rachels@gmail.com or karachel@uncg.edu
-		Phone number: (336) 648-1846
-	</body>
-</html>
+<?php 
+if (isset($_POST['contact.php'])) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $msg = $_POST['msg'];
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+  $message = "<html>
+  <head>
+  	<title>New message from website contact form</title>
+  </head>
+  <body>
+  	<h1>" . $subject . "</h1>
+  	<p>".$msg."</p>
+  </body>
+  </html>";
+  if (mail('website_owner@example.com', $subject, $message, $headers)) {
+   echo "Email sent";
+  }else{
+   echo "Failed to send email. Please try again later";
+  }
+}
+?>

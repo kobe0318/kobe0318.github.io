@@ -26,16 +26,12 @@
 <div class="contact" >
 		<h1>Contact Me</h1>
 		<hr style="margin:10px; border-color: black;">
-		<form class="contact-form" action="contactform.php" method="post">
-			<input type="text" style="padding:5px; margin: 8px" name="name" placeholder="Full name">
-			<br>
-			<input type="email" style="padding:5px; margin: 8px" name="email" placeholder="Your E-mail">
-			<br>
-			<input type="text" style="padding:5px; margin: 8px" name="subject" placeholder="Subject">
-			<br>
-			<textarea name="message" style="width: 200px; height: 100px; padding:5px; margin: 8px" placeholder="Message"></textarea>
-			<br>
-			<input type="button" style="background-color: black; border-color: grey; border-width: 8px; border-style: ridge;  color: white; width:150px; height:40px;" name="submit" value="Submit">
-		</form>
+		<form method="post" action="send_script.php">
+  Name: <input type="text" name="name" > <br />
+  email: <input type="email" name="email" > <br />
+  Subject: <input type="text" name="subject" > <br />
+  Message: <textarea name="msg"></textarea>
+  <button type="submit" name="send_message_btn">Send</button>
+</form>
 	</body>
 </html>
