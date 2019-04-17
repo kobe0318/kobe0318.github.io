@@ -140,8 +140,8 @@ nav ul li a:hover::after{
 }
 
 body{
-	width: auto;
-	height: 100%;
+	width: 100%;
+	height: auto;
 	margin: auto;
 	padding: 0;
 	background: url(images/bg.jpg) no-repeat;
