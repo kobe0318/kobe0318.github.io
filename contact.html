@@ -29,10 +29,14 @@
 		<h1>Contact Me</h1>
 		<hr style="margin:10px; border-color: black;">
 		<body>
-			<b>Personal e-mail</b>: kobe.rachels@gmail.com <br>
-			<b>School e-mail</b>: karachel@uncg.edu <br>
-			<b>Phone number</b>: (336) 648-1846
-			</body>
+			<form name="input" method="POST" action="https://formspree.io/kobe.rachels@gmail.com">
+				Name: <input type="text" name="Name" placeholder="Your name"><br>
+				Email: <input type="email" name ="_replyto" placeholder="Your email"><br>
+				Message: <textarea name="message" placeholder="Type your message"></textarea><br>
+				<button type="submit" value="Send">
+				<input type="hidden" name="_subject" value="Enter your subject here"/>
+				<input type="hidden" name="_next" value=contact.html" />
+
 		</form>
 	</body>
 </div>
